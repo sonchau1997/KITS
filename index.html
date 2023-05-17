@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>KITS</title>
+
+
+
+    </head>
+    <body >
+        <div class="sidebar1" id="sidebar1">
+            <ul>
+                <li>
+                    <img class="img-logo" src="logo@0 1.jpg" alt="logo">
+
+                </li>
+                <li>
+
+                    <img class="img" src="vector.jpg" alt="home">
+
+
+                </li>
+                <li>
+
+                    <img class="img" src="vector (1).jpg" alt="notification">
+                </li>
+                <li>
+
+                    <img class="img" src="vector (2).jpg" alt="plan">
+                </li>
+                <li>
+                    <img class="img" src="vector (3).jpg" alt="chart">
+                </li>
+                <li>
+                    <img class="img" src="vector (4).jpg" alt="people">
+                </li>
+                <li>
+                    <img class="img"  onclick="openNav()" src="vector (10).jpg" alt="setting">
+                </li>
+
+
+
+
+            </ul>
+
+        </div>
+        <div class="sidebar2" id="sidebar2">
+            <ul>
+                <li>
+                    <img class="img-logo" onclick="closeNav()" src="Vector (6).jpg" alt="setting">
+                    
+
+                    <span>Setting</span>
+
+                </li>
+                <li>
+
+                    <img class="img" src="vector (7).jpg" alt="edit">
+                    <span>Edit profile</span>
+
+
+                </li>
+                <li>
+
+                    <img class="img" src="vector (8).jpg" alt="notification">
+                    <span>Notification</span>
+
+                </li>
+                <li>
+
+                    <img class="img" src="vector (9).jpg" alt="security">
+                    <span>Security</span>
+                </li>
+                <li>
+                    <img class="img" src="vector (10).jpg" alt="Appearance">
+                    <span>Appearance</span>
+                </li>
+                <li>
+                    <img class="img" src="vector (11).jpg" alt="help">
+                    <span>Help</span>
+
+                </li>
+
+
+            </ul>
+
+
+
+        </div>
+        <div class="title">
+            <p>Edit Profile</p>
+        </div>
+        <div class="avatar">
+            <img  class="img-logo" src="logo@0 1.jpg" alt="logo" >
+        </div>
+        <form name="myForm" action="#">
+            <div>
+                <div class="firstname">
+                    <p>First Name</p>
+                    <input class="firstnamein" type="text" name="firstName" id="firstName">
+    
+                </div>
+                <div class="lastname">
+                    <p>Last Name</p>
+                    <input class="lastnamein" type="text" name="lastName"id="lastName">
+    
+                </div>
+    
+            </div>
+    
+            <div class="email">
+                <p>Email</p>
+                <input onchange="ValidateEmail(document.myForm.email)" class="emailin" type="email" name="email"id="email" placeholder="exemple@gmail.com">
+              <img  class="check" id="checkImg"src="icons8-cancel-48.png" alt="icon">
+    
+            </div>
+            <div class="address">
+                <p>Address</p>
+                <input class="addressin" type="text" name="address" id="address">
+    
+    
+            </div>
+            <div class="contact">
+                <p>Contact Number</p>
+                <input class="contactin" type="text"name="contact" id="contact">
+    
+    
+            </div>
+            <div class="city">
+                <p>City</p>
+                <select class="cityin" name="city" id="city" name="city"id="city">
+                    <option value="Ha Noi">Ha Noi</option>
+                    <option value="HCM">HCM</option>
+                    <option value="HaiPhong">HaiPhong</option>
+                    
+    
+    
+                </select>
+            </div>
+    
+            <div>
+                <button onclick="resetForm()" class="btncancel" >Cancel</button>
+    
+            </div>
+            <div>
+                <button onclick="validateForm()" class="btnsave">Save</button>
+    
+            </div>
+
+        </form>
+       
+        <script src="main.js"></script>
+
+
+    </body>
+</html>

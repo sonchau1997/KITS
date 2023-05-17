@@ -1,0 +1,169 @@
+body {
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+.wrapper {
+    background-color: white;
+    padding: 30px 70px;
+}
+
+ul {
+    text-align: center;
+}
+
+#content {
+    overflow: auto;
+}
+
+.column1,
+.column2,
+.column3 {
+    width: 31.3%;
+    float: left;
+}
+
+.column1 {
+    float: left;
+}
+
+.column2 {
+    margin: 0% 3%;
+}
+
+.column3 {
+    float: right;
+    margin: 0%;
+}
+
+
+li {
+    display: inline;
+    padding: 0.5em;
+}
+
+.banner,
+.article {
+    background-color: #efefef;
+    height: 10em;
+    margin-bottom: 1em;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-top: 20px;
+    font-family: 'Aclonica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+
+}
+
+a {
+    padding-left: 50px;
+    padding-top: 20px;
+
+}
+
+* {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.banner1 {
+    display: flex;
+    flex-wrap: wrap;
+    height:500px;
+
+
+    background: #C1DCDC;
+    border-radius: 24px;
+ 
+}
+
+.verticalLine {
+    border-left: thick solid hsl(0, 69%, 5%);
+}
+
+.content1 {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+
+.img-tree {
+    /* width: 200px;
+    height: 200px;
+    margin-left: 900px;
+ */
+
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    margin-left: 700px;
+    top: 123px;
+    
+}
+
+.title1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800px;
+    font-size: 64px;
+    line-height: 64px;
+    /* margin-left: 50px;
+    margin-top: 50px; */
+    width: 100px;
+}
+
+.search {
+    width: 449px;
+    height: 64px;
+    border-radius: 12px;
+    background: #FFFF;
+    margin-left: 50px;
+    margin-top: 100px;
+
+}
+.search-input {
+    border-radius: 12px;
+    text-indent: 20px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .search-input:focus {
+    border-color: #56c9c9;
+    box-shadow: 0 0 8px 0 #6deaea;
+  }
+  .input-with-icon {
+    margin: 12px auto;
+    position: relative;
+    width: 450px;
+    height: 64px;
+    margin-top: 100px;
+    
+  }
+  .search-icon {
+    padding: 14px;
+    margin: 8px;
+    right: 0;
+    background-color: #C1DCDC;
+    border-radius: 12px;
+    position: absolute;
+  }
