@@ -24,7 +24,7 @@ function login() {
             localStorage.setItem('token', data.token);
             localStorage.setItem('token', data.firstName);
             console.log("login success");
-            window.location.href = "./index.html";
+            window.location.href = "./edit-profile.html";
 
 
 
