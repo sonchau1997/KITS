@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    width: 1920x;
+    height: 1080px;
+    background-color: aqua;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+
+}
+
+.content {
+    display: flex;
+    margin: 264px 80px 100px 80px;
+    width: 1248px;
+    height: 579px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.left-content {
+    display: flex;
+    width: 70%;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.title {
+    width: 166px;
+    height: 84px;
+
+}
+.password{
+    margin-top:50px;
+}
+.flex-item{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+
+
+
+
+
+
+.login-form input {
+    width: 478px;
+    height: 46px;
+    background-color: #8EC5FC;
+}
+
+
+
+
+
+.btn-login-with-icon {
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D885A3;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 150px;
+    height: 46px;
+    margin-top: 50px;
+    margin-left: 170px;
+
+}
+
+.left-content p{
+    text-align: center;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6096B4;
+}
+
+.btn-login-with-icon img {
+
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+
+
+}
+
+.right-content {
+    display: flex;
+    background-color: #4295daa1;
+    width: 30%;
+    border-radius: 20px;
+    padding-right: 0;
+}
+
+.right-content .tree {
+    position: relative;
+    width: 198px;
+    height: 550px;
+    left: 150px;
+
+
+
+}
+
+.right-content .people {
+    position: relative;
+    width: 552px;
+    height: 542px;
+    right: 500px;
+}
+
+.login {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.google,
+.facebook,
+.github {
+    box-sizing: border-box;
+    text-align: center;
+    width: 125px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #6096B4;
+    border-radius: 40px;
+
+}
+
+.google,
+.facebook,
+.github img {
+    padding-top: 10px;
+
+
+}

@@ -28,15 +28,15 @@ function openNav(){
     console.log("open");
 }
 function validateForm() {
-    let x = document.forms["myForm"]["fistName","lastName","email","contact","address"].value;
-    if (x == "") {
-      alert("Name must be filled out");
-    //document.getElementById["firstName","lastName","email","contact","address"];
-      const input=document.querySelectorAll("#firstnamein,#lastnamein");
-      input.forEach((element) => {
-        element.style.borderColor="red";
+    //let x = document.forms["myForm"]["fistName","lastName","email","contact","address"].value;
+    //if (x == "") {
+     // alert("Name must be filled out");
+    //document.getElementById["firstName","lastName","email","contact","address"].style.borderColor='red';
+      const inputs=[firstName,lastName,email,contact,address];
+      inputs.forEach((element) => {
+        element.style.borderColor='red';
       });
       console.log("save");
       return false;
     }
-  }
+  //}
