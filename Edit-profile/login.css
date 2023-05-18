@@ -4,8 +4,6 @@ body {
     height: 1080px;
     background-color: aqua;
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-
-
 }
 
 .content {
@@ -15,7 +13,6 @@ body {
     height: 579px;
     background-color: white;
     border-radius: 20px;
-
 }
 
 .left-content {
@@ -33,32 +30,22 @@ body {
 .title {
     width: 166px;
     height: 84px;
+}
 
+.password {
+    margin-top: 50px;
 }
-.password{
-    margin-top:50px;
-}
-.flex-item{
+
+.flex-item {
     display: flex;
     justify-content: space-between;
-   
 }
-
-
-
-
-
-
 
 .login-form input {
     width: 478px;
     height: 46px;
     background-color: #8EC5FC;
 }
-
-
-
-
 
 .btn-login-with-icon {
     color: white;
@@ -74,10 +61,9 @@ body {
     height: 46px;
     margin-top: 50px;
     margin-left: 170px;
-
 }
 
-.left-content p{
+.left-content p {
     text-align: center;
     font-family: 'Nunito';
     font-style: normal;
@@ -88,12 +74,9 @@ body {
 }
 
 .btn-login-with-icon img {
-
     width: 10px;
     height: 10px;
     margin-left: 10px;
-
-
 }
 
 .right-content {
@@ -109,9 +92,6 @@ body {
     width: 198px;
     height: 550px;
     left: 150px;
-
-
-
 }
 
 .right-content .people {
@@ -124,8 +104,6 @@ body {
 .login {
     display: flex;
     justify-content: space-around;
-
-
 }
 
 .google,
@@ -138,13 +116,10 @@ body {
     background: #FFFFFF;
     border: 1px solid #6096B4;
     border-radius: 40px;
-
 }
 
 .google,
 .facebook,
 .github img {
     padding-top: 10px;
-
-
 }
