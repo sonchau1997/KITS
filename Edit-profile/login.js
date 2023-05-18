@@ -9,7 +9,7 @@ function login() {
 
                 username: username.value,
                 password: password.value,
-                // expiresInMins: 60, // optional
+
             })
         })
         .then(res => {

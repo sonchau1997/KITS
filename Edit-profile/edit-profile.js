@@ -1,42 +1,67 @@
 function ValidateEmail(inputText) {
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (inputText.value.match(mailformat)) {
-       // alert("Valid email address!");
+        // alert("Valid email address!");
         //document.myForm.email.focus();
-        document.getElementById("checkImg").src = "icons8-tick-48.png";
+        document.getElementById("checkImg").src = "../images/icons8-tick-48.png";
 
         return true;
-    }
-    else {
+    } else {
         //alert("You have entered an invalid email address!");
         //document.myForm.email.focus();
-        document.getElementById("checkImg").src = "icons8-cancel-48.png";
+        document.getElementById("checkImg").src = "../images/icons8-cancel-48.png";
         return false;
     }
 }
-function resetForm(){
+
+function resetForm() {
     document.getElementById("myForm").reset();
 }
-function closeNav(){
-    document.getElementById("sidebar2").style.display="none";
-  
+
+function closeNav() {
+    document.getElementById("sidebar2").style.display = "none";
+
     console.log("close");
 
 }
-function openNav(){
-    document.getElementById("sidebar2").style.display="block";
+
+function openNav() {
+    document.getElementById("sidebar2").style.display = "block";
     console.log("open");
 }
-function validateForm() {
-    //let x = document.forms["myForm"]["fistName","lastName","email","contact","address"].value;
-    //if (x == "") {
-     // alert("Name must be filled out");
-    //document.getElementById["firstName","lastName","email","contact","address"].style.borderColor='red';
-      const inputs=[firstName,lastName,email,contact,address];
-      inputs.forEach((element) => {
-        element.style.borderColor='red';
-      });
-      console.log("save");
-      return false;
+let firstName = document.getElementById("firstName");
+let lastName = document.getElementById("lastName");
+let email = document.getElementById("email");
+let address = document.getElementById("address");
+let contact = document.getElementById("contact");
+let city = document.getElementById("city");
+const inputs = [firstName, lastName, email, contact, address, city];
+
+const validateForm = () => {
+
+
+
+    let invalidInput = false;
+    inputs.forEach((input) => {
+        if (input.value == null || input.value.trim() === "") {
+            input.style.borderColor = "red";
+            invalidInput = true;
+        } else {
+
+            input.style.borderColor = "";
+
+        }
+
+    });
+    if (invalidInput) {
+        alert("Please fill in all the fields!");
+
     }
-  //}
+
+    console.log("save");
+    return;
+}
+
+
+
+//}
