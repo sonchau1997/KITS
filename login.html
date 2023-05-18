@@ -7,51 +7,55 @@
     <link rel="stylesheet" href="login.css">
     <title>Login</title>
 </head>
-<>
+
     <div class="container">
         <div class="content">
             <div class="left-content">
+
                 
                 <div class="login-form"> 
                     <div class="title"><h1>Login</h1></div>
-                    <div class="username">
-                        <label>Username</label>
-                        <div>
-                            <input class="usernamein" type="text">
+                    <form class="form">
+                        <div class="username">
+                            <label>Username</label>
+                            <div>
+                                <input class="usernamein" id="username" type="text">
+                            </div>
+                           
+                        </div>
+                        <div class="password">
+                            <div class="flex-item">
+                                
+                                    <label>Password</label>
+                                    <a href="#">Forgot Password</a>
+                            </div>
+                            
+                            <div>
+                                <input  class="passwordin" id="password"type="password" >
+                            </div>
+                            
                         </div>
                        
-                    </div>
-                    <div class="password">
-                        <div class="flex-item">
-                            
-                                <label>Password</label>
-                                <a href="#">Forgot Password</a>
-                        </div>
                         
-                        <div>
-                            <input class="passwordin"type="text" >
-                        </div>
-                        
-                    </div>
-                   
+                        <button onclick="login()" class="btn-login-with-icon" type="submit">Login
+                            <img src="./images/arrow.png" alt="arrow">
+                        </button>
+                    </form>
                     
-                    <button class="btn-login-with-icon">Login
-                        <img src="arrow.png" alt="arrow">
-                    </button>
                     <div>
                         <p>or continute with</p>
                     </div>
                     <div class="login">
                         <div class="google">
-                           <img src="Google.png" alt="google">
+                           <img src="./images/Google.png" alt="google">
 
                         </div>
                         <div class="github">
-                            <img src="Github.png" alt="github">
+                            <img src="./images/Github.png" alt="github">
 
                         </div>
                         <div class="facebook">
-                            <img src="Facebook.png" alt="facebook">
+                            <img src="./images/Facebook.png" alt="facebook">
 
                         </div>
                         
@@ -72,8 +76,8 @@
                 </div>
             </div>
             <div class="right-content">
-                <img class="tree" src="cactus.png" alt="plant">
-                <img class="people" src="Character-working-laptop-sitting-chair.png"alt="people">
+                <img class="tree" src="./images/cactus.png" alt="plant">
+                <img class="people" src="./images/Character-working-laptop-sitting-chair.png"alt="people">
                 
             </div>
 
