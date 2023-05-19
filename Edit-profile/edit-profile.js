@@ -7,7 +7,7 @@ function ValidateEmail(inputText) {
 
         return true;
     } else {
-        //alert("You have entered an invalid email address!");
+         alert("Invalid email");
         //document.myForm.email.focus();
         document.getElementById("checkImg").src = "../images/icons8-cancel-48.png";
         return false;
