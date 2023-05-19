@@ -54,7 +54,7 @@ const validateForm = () => {
 
     });
     if (invalidInput) {
-        alert("Please fill in all the fields!");
+        alert("Please enter all fieds blank!");
 
     }
 
