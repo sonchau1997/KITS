@@ -74,4 +74,14 @@ const show=document.getElementById("username");
 show.innerHTML=username;
 
 
+function logout(){
+    localStorage.clear();
+    location.reload();
+    window.location.href = "./login.html";
+    console.log("logout");
+
+}
+
+
+
 
