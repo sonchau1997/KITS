@@ -23,6 +23,7 @@ function login() {
         .then(data => {
             localStorage.setItem('token', data.token);
             localStorage.setItem('firstName', data.firstName);
+            localStorage.setItem('image',data.image);
             console.log("login success");
             window.location.href = "./edit-profile.html";
         })

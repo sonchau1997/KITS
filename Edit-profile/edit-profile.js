@@ -72,6 +72,13 @@ menuTitles.forEach(menuTitle => {
 const username=localStorage.getItem("firstName");
 const show=document.getElementById("username");
 show.innerHTML=username;
+const image=localStorage.getItem("image");
+const showimage1=document.getElementById("img-logo1");
+showimage1.src=image;
+const showimage2=document.getElementById("img-logo2");
+showimage2.src=image;
+
+
 
 
 function logout(){
