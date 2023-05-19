@@ -22,15 +22,12 @@ function login() {
         })
         .then(data => {
             localStorage.setItem('token', data.token);
-            localStorage.setItem('token', data.firstName);
+            localStorage.setItem('firstName', data.firstName);
             console.log("login success");
             window.location.href = "./edit-profile.html";
-
-
-
         })
         .catch(error => {
-            console.error('login failde', error);
+            console.error('login failed', error);
         })
 
 

@@ -68,6 +68,10 @@ menuTitles.forEach(menuTitle => {
     this.classList.add('clicked');
   });
 });
+/////////////
+const username=localStorage.getItem("firstName");
+const show=document.getElementById("username");
+show.innerHTML=username;
 
 
 

@@ -1,163 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./edit-profile.css">
-    <title>KITS</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./edit-profile.css">
+        <title>KITS</title>
 
 
 
-</head>
+    </head>
 
-<body>
-    <div class="sidebar1" id="sidebar1">
-        <ul>
-            <li>
-                <img class="img-logo" src="../images/logo@0 1.jpg" alt="logo">
+    <body>
+        <div class="sidebar1" id="sidebar1">
+            <ul>
+                <li>
+                    <img class="img-logo" src="../images/logo@0 1.jpg"
+                        alt="logo">
 
-            </li>
-            <li>
+                </li>
+                <li>
 
-                <img class="img" src="../images/vector.jpg" alt="home">
+                    <img class="img" src="../images/vector.jpg" alt="home">
+                </li>
+                <li>
 
+                    <img class="img" src="../images/vector (1).jpg"
+                        alt="notification">
+                </li>
+                <li>
 
-            </li>
-            <li>
-
-                <img class="img" src="../images/vector (1).jpg" alt="notification">
-            </li>
-            <li>
-
-                <img class="img" src="../images/vector (2).jpg" alt="plan">
-            </li>
-            <li>
-                <img class="img" src="../images/vector (3).jpg" alt="chart">
-            </li>
-            <li>
-                <img class="img" src="../images/vector (4).jpg" alt="people">
-            </li>
-            <li>
-                <img class="img" onclick="openSider()" src="../images/vector (10).jpg" alt="setting">
-            </li>
-
-
-
-
-        </ul>
-
-    </div>
-    <div class="sidebar2" id="sidebar2">
-        <ul>
-            <li>
-                <img class="img-logo" onclick="closeSider()" src="../images/Vector (6).jpg" alt="setting">
-
-
-                <span class="icon-bold">Setting</span>
-
-            </li>
-            <li>
-
-                <img class="img" src="../images/vector (7).jpg" alt="edit">
-                <span class="icon-bold">Edit profile</span>
-
-
-            </li>
-            <li>
-
-                <img class="img " src="../images/vector (8).jpg" alt="notification">
-                <span class="icon-bold"  >Notification</span>
-
-            </li>
-            <li>
-
-                <img class="img " src="../images/vector (9).jpg" alt="security">
-                <span class="icon-bold">Security</span>
-            </li>
-            <li>
-                <img class="img " src="../images/vector (10).jpg" alt="Appearance">
-                <span class="icon-bold">Appearance</span>
-            </li>
-            <li>
-                <img class="img" src="../images/vector (11).jpg" alt="help">
-                <span class="icon-bold">Help</span>
-
-            </li>
-
-
-        </ul>
+                    <img class="img" src="../images/vector (2).jpg" alt="plan">
+                </li>
+                <li>
+                    <img class="img" src="../images/vector (3).jpg" alt="chart">
+                </li>
+                <li>
+                    <img class="img" src="../images/vector (4).jpg"
+                        alt="people">
+                </li>
+                <li>
+                    <img class="img" onclick="openSider()" src="../images/vector (10).jpg" alt="setting">
+                </li>
 
 
 
-    </div>
-    <div class="title">
-        <p>Edit Profile</p>
-    </div>
-    <div class="avatar">
-        <img class="img-logo" src="../images/logo@0 1.jpg" alt="logo">
-    </div>
-    <form name="myForm" action="#">
-        <div>
-            <div class="firstname">
-                <p>First Name</p>
-                <input class="firstnamein" type="text" name="firstName" id="firstName" placeholder="Luan">
+
+            </ul>
+
+        </div>
+        <div class="sidebar2" id="sidebar2">
+            <ul>
+                <li>
+                    <img class="img-logo" onclick="closeSider()"
+                        src="../images/Vector (6).jpg" alt="setting">
+                    <span class="icon-bold">Setting</span>
+                </li>
+                <li>
+
+                    <img class="img" src="../images/vector (7).jpg" alt="edit">
+                    <span class="icon-bold">Edit profile</span>
+
+
+                </li>
+                <li>
+
+                    <img class="img " src="../images/vector (8).jpg"
+                        alt="notification">
+                    <span class="icon-bold">Notification</span>
+
+                </li>
+                <li>
+
+                    <img class="img " src="../images/vector (9).jpg"
+                        alt="security">
+                    <span class="icon-bold">Security</span>
+                </li>
+                <li>
+                    <img class="img " src="../images/vector (10).jpg"
+                        alt="Appearance">
+                    <span class="icon-bold">Appearance</span>
+                </li>
+                <li>
+                    <img class="img" src="../images/vector (11).jpg" alt="help">
+                    <span class="icon-bold">Help</span>
+
+                </li>
+
+
+            </ul>
+
+
+
+        </div>
+        <div class="title">
+            <p>Edit Profile</p>
+        </div>
+        <div class="avatar">
+            <div id="username"></div>
+            <img class="img-logo" src="../images/logo@0 1.jpg" alt="logo">
+        </div>
+        <form name="myForm" action="#">
+            <div>
+                <div class="firstname">
+                    <p>First Name</p>
+                    <input class="firstnamein" type="text" name="firstName"
+                        id="firstName" placeholder="Luan">
+                </div>
+                <div class="lastname">
+                    <p>Last Name</p>
+                    <input class="lastnamein" type="text" name="lastName"
+                        id="lastName" placeholder="Vuong">
+
+                </div>
 
             </div>
-            <div class="lastname">
-                <p>Last Name</p>
-                <input class="lastnamein" type="text" name="lastName" id="lastName" placeholder="Vuong">
+
+            <div class="email">
+                <p>Email</p>
+                <input onchange="ValidateEmail(document.myForm.email)"
+                    class="emailin" type="email" name="email" id="email"
+                    placeholder="exemple@gmail.com">
+                <img class="check" id="checkImg"
+                    src="../images/icons8-cancel-48.png" alt="icon">
 
             </div>
-
-        </div>
-
-        <div class="email">
-            <p>Email</p>
-            <input onchange="ValidateEmail(document.myForm.email)" class="emailin" type="email" name="email" id="email" placeholder="exemple@gmail.com">
-            <img class="check" id="checkImg" src="../images/icons8-cancel-48.png" alt="icon">
-
-        </div>
-        <div class="address">
-            <p>Address</p>
-            <input class="addressin" type="text" name="address" id="address" placeholder="33062 Zboncak isle">
+            <div class="address">
+                <p>Address</p>
+                <input class="addressin" type="text" name="address" id="address"
+                    placeholder="33062 Zboncak isle">
 
 
-        </div>
-        <div class="contact">
-            <p>Contact Number</p>
-            <input class="contactin" type="text" name="contact" id="contact" placeholder="58077.79">
+            </div>
+            <div class="contact">
+                <p>Contact Number</p>
+                <input class="contactin" type="text" name="contact" id="contact"
+                    placeholder="58077.79">
 
 
-        </div>
-        <div class="city">
-            <p>City</p>
-            <select class="cityin" name="city" id="city" name="city" id="city">
+            </div>
+            <div class="city">
+                <p>City</p>
+                <select class="cityin" name="city" id="city" name="city"
+                    id="city">
                     <option value=""></option>
                     <option value="Ha Noi">Ha Noi</option>
                     <option value="HCM">HCM</option>
                     <option value="HaiPhong">Hai Phong</option>
-                    
-    
-    
+
+
+
                 </select>
-        </div>
+            </div>
 
-        <div>
-            <button onclick="resetForm()" class="btncancel" type="button">Cancel</button>
+            <div>
+                <button onclick="resetForm()" class="btncancel" type="button">Cancel</button>
+            </div>
+            <div>
+                <button onclick="validateForm()" class="btnsave" type="button">Save</button>
+            </div>
 
-        </div>
-        <div>
-            <button onclick="validateForm()" class="btnsave" type="button">Save</button>
+        </form>
 
-        </div>
-
-    </form>
-
-    <script src="edit-profile.js"></script>
+        <script src="edit-profile.js"></script>
 
 
-</body>
+    </body>
 
 </html>
