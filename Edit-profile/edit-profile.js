@@ -18,14 +18,14 @@ function resetForm() {
     document.getElementById("myForm").reset();
 }
 
-function closeNav() {
+function closeSider() {
     document.getElementById("sidebar2").style.display = "none";
 
     console.log("close");
 
 }
 
-function openNav() {
+function openSider() {
     document.getElementById("sidebar2").style.display = "block";
     console.log("open");
 }
@@ -61,7 +61,13 @@ const validateForm = () => {
     console.log("save");
     return;
 }
+const menuTitles = document.querySelectorAll('.icon-bold');
+menuTitles.forEach(menuTitle => {
+    menuTitle.addEventListener('click', function() {
+    menuTitles.forEach(title => title.classList.remove('clicked'));
+    this.classList.add('clicked');
+  });
+});
 
 
 
-//}
